@@ -604,6 +604,35 @@ figure:hover .project-name {
   transform: translateX(0);
 }
 
+.previous a{
+  font-size: 2em;
+  text-decoration: none;
+  color: #BE9A30;
+  float:left;
+  padding:1em;
+  transform: scale(1);
+  transition: all .5s;
+}
+
+.previous a:hover{
+  transform: scale(1.2);
+}
+
+.next a{
+  font-size: 2em;
+  text-decoration: none;
+  color: #BE9A30;
+  float:right;
+  padding:1em;
+  transform: scale(1);
+  transition: all .5s;
+}
+
+.next a:hover{
+  transform: scale(1.2);
+}
+
+
 /*---Project 1---*/
 .parent-project1 {
   display: flex;
@@ -661,14 +690,76 @@ span {
   width: 50%;
   display: block;
   margin: auto;
-  padding-bottom: 4em;
+  box-shadow: 0px 0px 20px 0px #3A6857;
 }
 .smvid{
-  width: 100%;%;
+  width: 100%;
   outline: none;
 }
 
+/*--- Project 3---*/
 
+.project1-slideshow{
+  position: relative;
+  margin:auto;
+}
+  .slides{
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+  }
+
+  /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-project3 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /*---PROJECT 4---*/
 .project4-gallery{
@@ -699,8 +790,12 @@ span {
 padding-right: 2em;
 padding-bottom: 2em;
 }
-/*--PROJECT 7--*/
 
+/*--PROJECT 7--*/
+.project4-gallery{
+  padding-bottom: 5em;
+  box
+}
 
 
 
@@ -721,15 +816,97 @@ footer img {
 }
 
 
+#form_wrapper {
+    width: 100%;
+	height: 100vh;
+	padding: 20px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width:40%;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+input[type=text], input[type=email] {
+    width: 60%;
+    padding: 12px 0px 4px 4px;
+    margin: 6px 0 20px;
+    display: block;
+	border:none;
+    border-bottom: 1px dotted #000;
+    font-size:18px;
+    font-family: jeanne-moderno, serif;
+    color:#BE9A30;
+    background: #eee;
+    transition:all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    width: 100%;
+    color:#f00;
+	outline: none;
+	border-bottom: 1px dotted #f00;
+}
+
+input[type=submit], input[type=reset] {
+    display: inline-block;
+    width: 20%;
+    background-color:#F32E9A;
+    color: white;
+    padding: 10px 20px;
+    margin: 14px 0;
+	outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:18px;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    transition:all .3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color:#333;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+	margin: 6px 0 20px;
+    border-radius: 4px;
+	border: none;
+    border-bottom: 1px dotted #000;
+    background-color: #eee;
+    font-size:18px;
+    resize: none;
+    color:#333;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	transition:all .3s;
+}
+
+textarea:focus {
+    background: #333;
+    color:#fff;
+	outline: none;
+}
+
+label {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 18px;
+	font-weight: bold;
+}
 
 
 
 /* Mobile */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D;
-    /* Red */
-  }
+
 
   nav {
     display: flex;
@@ -745,6 +922,7 @@ footer img {
     width: 100%;
     height: 170vh;
     padding-bottom: 1em;
+    padding-right: 1em;
   }
 
   article.intro-text {
@@ -760,4 +938,46 @@ footer img {
     flex-direction: column;
     width: 100%;
   }
+
+.project5-images{
+padding-left: 2em;
+
+}
+  .project5-images img{
+    width: 100%;
+  }
+
+  footer img{
+    width: 15%;
+  }
+
+.title-project{
+  padding-top: 15em;
+}
+
+.child-project1{
+  display: flex;
+  flex-direction: column;
+
+  }
+  .text-project1{
+    width:80%;
+  }
+
+  .image-project1{
+    padding-bottom: 2em;
+  }
+
+  .video{
+    width: 75%;
+  }
+
+  .project4-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 80%;
+
+}
+
 }
