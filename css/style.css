@@ -698,74 +698,39 @@ span {
 }
 
 /*--- Project 3---*/
+.project3-gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.project1-slideshow{
-  position: relative;
-  margin:auto;
-}
-  .slides{
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-  }
-
-  /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  height: 100vh;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-left: 5em;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.project3-gallery img{
+  width: 45%;
+    padding: 1.5em;
 }
 
-/* Caption text */
-.text-project3 {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
 /*---PROJECT 4---*/
 .project4-gallery{
   display: flex;
   justify-content: space-around;
 
+}
+
+section.project4-gallery-2{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.project4-gallery-2 img{
+  padding: 120px;
 }
 
 .hover img:link, img:visited {
@@ -974,12 +939,33 @@ padding-left: 2em;
     width: 75%;
   }
 
+  .project3-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ;
+    padding-top: 15em;
+    padding-bottom: 10em;
+    padding-left: 1.5em;
+  }
+
+  .project3-gallery img{
+    width: 100%;
+
+
+  }
+
   .project4-gallery{
     display: flex;
     flex-direction: column;
     justify-content:center;
     width: 80%;
 
+}
+
+.previous{
+  padding-top: 8em;
 }
 
 }
