@@ -827,7 +827,7 @@ footer img {
 
 form {
 	width:40%;
-	background: #fff;
+	background: #3A6857;
 	border-radius: 10px;
 	padding: 20px;
 }
@@ -842,13 +842,13 @@ input[type=text], input[type=email] {
     font-size:18px;
     font-family: jeanne-moderno, serif;
     color:#BE9A30;
-    background: #eee;
+    background: #A1C1B1;
     transition:all .3s;
 }
 
 input[type=text]:focus, input[type=email]:focus {
     width: 100%;
-    color:#f00;
+    color:#BE9A30;
 	outline: none;
 	border-bottom: 1px dotted #f00;
 }
@@ -856,8 +856,8 @@ input[type=text]:focus, input[type=email]:focus {
 input[type=submit], input[type=reset] {
     display: inline-block;
     width: 20%;
-    background-color:#F32E9A;
-    color: white;
+    background-color:#A1C1B1;
+    color: #3A6857;
     padding: 10px 20px;
     margin: 14px 0;
 	outline: none;
@@ -865,12 +865,13 @@ input[type=submit], input[type=reset] {
     border-radius: 4px;
     cursor: pointer;
     font-size:18px;
-    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: Questrial, sans-serif;
+    font-weight: bold;
     transition:all .3s;
 }
 
 input[type=submit]:hover, input[type=reset]:hover {
-    background-color:#333;
+    background-color:#BE9A30;
 }
 
 textarea {
@@ -886,7 +887,7 @@ textarea {
     font-size:18px;
     resize: none;
     color:#333;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: Questrial, sans-serif;
 	transition:all .3s;
 }
 
@@ -897,9 +898,10 @@ textarea:focus {
 }
 
 label {
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: Questrial, sans-serif;
     font-size: 18px;
 	font-weight: bold;
+  color:#BE9A30;
 }
 
 
